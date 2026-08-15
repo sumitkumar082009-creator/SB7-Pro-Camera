@@ -1,0 +1,7 @@
+{
+  "name": "SB7 Pro Camera",
+  "description": "Advanced pro camera app featuring 20x zoom, DSLR portrait bokeh blur, real-time image processing pipeline, and sleek manual photography controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

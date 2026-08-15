@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Outer Golden Lens Ring -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M54,54 m-28,0 a28,28 0 1,0 56,0 a28,28 0 1,0 -56,0"
+        android:strokeColor="#FFC837"
+        android:strokeWidth="2.5" />
+    <!-- Metallic Inner Bezel -->
+    <path
+        android:fillColor="#21262D"
+        android:pathData="M54,54 m-25,0 a25,25 0 1,0 50,0 a25,25 0 1,0 -50,0" />
+    <!-- Optical Glass Coating Gradient -->
+    <path
+        android:pathData="M54,54 m-20,0 a20,20 0 1,0 40,0 a20,20 0 1,0 -40,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="40"
+                android:startY="38"
+                android:endX="68"
+                android:endY="70"
+                android:type="linear">
+                <item android:color="#2A5298" android:offset="0.0" />
+                <item android:color="#1E3C72" android:offset="0.5" />
+                <item android:color="#0F172A" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Aperture Blades Accent -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#40FFC837"
+        android:strokeWidth="1.2"
+        android:pathData="M54,34 L66,48 M66,48 L62,66 M62,66 L46,70 M46,70 L38,56 M38,56 L46,38 M46,38 L54,34" />
+    <!-- Center Optics Flare Reflex -->
+    <path
+        android:fillColor="#33FFFFFF"
+        android:pathData="M54,54 m-10,0 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0" />
+    <!-- Lens Center Pupil -->
+    <path
+        android:fillColor="#FFC837"
+        android:pathData="M54,54 m-4.5,0 a4.5,4.5 0 1,0 9,0 a4.5,4.5 0 1,0 -9,0" />
+    <!-- Lens Reflection Arc -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#80FFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M42,42 A17,17 0 0,1 62,38" />
+    <!-- Pro Camera Red Dot Indicator (Leica/DSLR Pro style) -->
+    <path
+        android:fillColor="#EF4444"
+        android:pathData="M73,35 m-2.5,0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" />
+</vector>
