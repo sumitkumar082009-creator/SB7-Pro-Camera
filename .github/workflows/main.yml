@@ -18,6 +18,9 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
+    - name: Generate Gradle Wrapper
+      run: gradle wrapper
+
     - name: Make gradlew executable
       run: chmod +x ./gradlew
 
@@ -29,3 +32,4 @@ jobs:
       with:
         name: my-app-apk
         path: app/build/outputs/apk/debug/app-debug.apk
+
