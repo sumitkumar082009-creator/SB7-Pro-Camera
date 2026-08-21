@@ -21,6 +21,9 @@ jobs:
     - name: Generate Gradle Wrapper
       run: gradle wrapper
 
+    - name: Generate debug.keystore
+      run: keytool -genkey -v -keystore debug.keystore -alias androiddebugkey -storepass android -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
+
     - name: Make gradlew executable
       run: chmod +x ./gradlew
 
@@ -32,4 +35,4 @@ jobs:
       with:
         name: my-app-apk
         path: app/build/outputs/apk/debug/app-debug.apk
-
+        
